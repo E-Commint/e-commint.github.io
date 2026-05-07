@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#5d8fc8" />
+  <title>e-commint vCard</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .index-hero {
+      padding: 60px 24px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, #6fb3a8 0%, #5d8fc8 55%, #6f7fc8 100%);
+      color: #ffffff;
+    }
+    .index-hero h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .index-hero p {
+      opacity: 0.9;
+      font-size: 15px;
+    }
+    .index-list {
+      padding: 28px 22px 40px;
+    }
+    .person-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(20, 30, 70, 0.06);
+      border: 1px solid #f0f2f7;
+      margin-bottom: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    @media (hover: hover) {
+      .person-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(20, 30, 70, 0.1);
+      }
+    }
+    .person-card img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .person-card .info-text { flex: 1; }
+    .person-card .info-value { font-size: 16px; font-weight: 600; }
+    .person-card .info-sub { font-size: 13px; color: #8a93a8; margin-top: 2px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="index-hero">
+      <h1>e-commint</h1>
+      <p>Dijital kartvizitler</p>
+    </section>
+    <section class="index-list">
+      <a class="person-card" href="kaanbingol/">
+        <img src="public/kaan.jpeg" alt="Kaan Bingöl" />
+        <div class="info-text">
+          <div class="info-value">Kaan Bingöl</div>
+          <div class="info-sub">kaan.bingol@e-commint.com</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="person-card" href="selintezel/">
+        <img src="public/selin.jpeg" alt="Selin Tezel" />
+        <div class="info-text">
+          <div class="info-value">Selin Tezel</div>
+          <div class="info-sub">selin.tezel@e-commint.com</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
